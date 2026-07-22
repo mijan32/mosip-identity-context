@@ -9,12 +9,10 @@
     "MOSIPVerifiableCredential": {
       "@id": "mosipid:MOSIPVerifiableCredential"
     },
-
     "vcVer": "mosipid:vcVer",
     "UIN": "schema:identifier",
     "VID": "mosipid:VID",
     "npi": "mosipid:npi",
-
     "fullName": {
       "@id": "schema:name",
       "@container": "@set",
@@ -128,6 +126,79 @@
       "@id": "mosipid:claim169",
       "@container": "@index",
       "@type": "schema:Text"
-    }
+    },
+
+    "birthPlace": {
+      "@id": "schema:birthPlace",
+      "@container": "@set",
+      "@context": {
+        "language": "@language",
+        "value": "@value"
+      }
+    },
+    "nationality": "schema:nationality",
+    "profession": {
+      "@id": "schema:hasOccupation",
+      "@container": "@set",
+      "@context": {
+        "language": "@language",
+        "value": "@value"
+      }
+    },
+    "residence": {
+      "@id": "schema:homeLocation",
+      "@container": "@set",
+      "@context": {
+        "language": "@language",
+        "value": "@value"
+      }
+    },
+    "fatherName": {
+      "@id": "mosipid:fatherName",
+      "@container": "@set",
+      "@context": {
+        "language": "@language",
+        "value": "@value"
+      }
+    },
+    "fatherDateOfBirth": {
+      "@id": "mosipid:fatherDateOfBirth",
+      "@type": "xsd:date"
+    },
+    "fatherBirthPlace": {
+      "@id": "mosipid:fatherBirthPlace",
+      "@container": "@set",
+      "@context": {
+        "language": "@language",
+        "value": "@value"
+      }
+    },
+    "motherName": {
+      "@id": "mosipid:motherName",
+      "@container": "@set",
+      "@context": {
+        "language": "@language",
+        "value": "@value"
+      }
+    },
+    "motherDateOfBirth": {
+      "@id": "mosipid:motherDateOfBirth",
+      "@type": "xsd:date"
+    },
+    "motherBirthPlace": {
+      "@id": "mosipid:motherBirthPlace",
+      "@container": "@set",
+      "@context": {
+        "language": "@language",
+        "value": "@value"
+      }
+    },
+    "actReference": "mosipid:actReference",
+    "formNumber": "mosipid:formNumber",
+    "birthDepartmentCode": "mosipid:birthDepartmentCode",
+    "birthCommuneCode": "mosipid:birthCommuneCode",
+    "birthArrondissementCode": "mosipid:birthArrondissementCode",
+    "birthVillageCode": "mosipid:birthVillageCode",
+    "birthCountryCode": "mosipid:birthCountryCode"
   }
 }
