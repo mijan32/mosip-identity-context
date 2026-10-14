@@ -123,8 +123,8 @@
       "@id": "mosipid:nationalInsuranceBoard",
       "@type": "xsd:string"
     },
-    "nipnumber": {
-      "@id": "mosipid:nipnumber",
+    "nipNumber": {
+      "@id": "mosipid:nipNumber",
       "@type": "xsd:string"
     },
 
