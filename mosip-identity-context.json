@@ -5,14 +5,13 @@
     "type": "@type",
     "schema": "https://schema.org/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "mosipid": "https://inji.github.io/inji-config/contexts/mosip-identity-context.json#",
+    "mosipid": "https://Suraj-Murgude.github.io/mosip-identity-context/mosip-identity-context.json#",
     "MOSIPVerifiableCredential": {
       "@id": "mosipid:MOSIPVerifiableCredential"
     },
     "vcVer": "mosipid:vcVer",
     "UIN": "schema:identifier",
     "VID": "mosipid:VID",
-    "npi": "mosipid:npi",
     "fullName": {
       "@id": "schema:name",
       "@container": "@set",
@@ -22,7 +21,7 @@
       }
     },
     "firstName": {
-      "@id": "schema:givenName",
+      "@id": "schema:firstName",
       "@container": "@set",
       "@context": {
         "language": "@language",
@@ -30,7 +29,7 @@
       }
     },
     "lastName": {
-      "@id": "schema:familyName",
+      "@id": "schema:lastName",
       "@container": "@set",
       "@context": {
         "language": "@language",
@@ -46,7 +45,7 @@
       }
     },
     "dateOfBirth": {
-      "@id": "schema:birthDate",
+      "@id": "schema:dateOfBirth",
       "@type": "xsd:date"
     },
     "email": "schema:email",
@@ -60,16 +59,8 @@
         "value": "@value"
       }
     },
-    "address": {
-      "@id": "schema:address",
-      "@container": "@set",
-      "@context": {
-        "language": "@language",
-        "value": "@value"
-      }
-    },
     "addressLine1": {
-      "@id": "schema:streetAddress",
+      "@id": "schema:addressLine1",
       "@container": "@set",
       "@context": {
         "language": "@language",
@@ -126,79 +117,24 @@
       "@id": "mosipid:claim169",
       "@container": "@index",
       "@type": "schema:Text"
+      },
+
+    "nationalInsuranceBoard": {
+      "@id": "mosipid:nationalInsuranceBoard",
+      "@type": "xsd:string"
+    },
+    "nipnumber": {
+      "@id": "mosipid:nipnumber",
+      "@type": "xsd:string"
     },
 
-    "birthPlace": {
-      "@id": "schema:birthPlace",
+    "constituency": {
+      "@id": "mosipid:constituency",
       "@container": "@set",
       "@context": {
         "language": "@language",
         "value": "@value"
       }
-    },
-    "nationality": "schema:nationality",
-    "profession": {
-      "@id": "schema:hasOccupation",
-      "@container": "@set",
-      "@context": {
-        "language": "@language",
-        "value": "@value"
-      }
-    },
-    "residence": {
-      "@id": "schema:homeLocation",
-      "@container": "@set",
-      "@context": {
-        "language": "@language",
-        "value": "@value"
-      }
-    },
-    "fatherName": {
-      "@id": "mosipid:fatherName",
-      "@container": "@set",
-      "@context": {
-        "language": "@language",
-        "value": "@value"
-      }
-    },
-    "fatherDateOfBirth": {
-      "@id": "mosipid:fatherDateOfBirth",
-      "@type": "xsd:date"
-    },
-    "fatherBirthPlace": {
-      "@id": "mosipid:fatherBirthPlace",
-      "@container": "@set",
-      "@context": {
-        "language": "@language",
-        "value": "@value"
-      }
-    },
-    "motherName": {
-      "@id": "mosipid:motherName",
-      "@container": "@set",
-      "@context": {
-        "language": "@language",
-        "value": "@value"
-      }
-    },
-    "motherDateOfBirth": {
-      "@id": "mosipid:motherDateOfBirth",
-      "@type": "xsd:date"
-    },
-    "motherBirthPlace": {
-      "@id": "mosipid:motherBirthPlace",
-      "@container": "@set",
-      "@context": {
-        "language": "@language",
-        "value": "@value"
-      }
-    },
-    "actReference": "mosipid:actReference",
-    "formNumber": "mosipid:formNumber",
-    "birthDepartmentCode": "mosipid:birthDepartmentCode",
-    "birthCommuneCode": "mosipid:birthCommuneCode",
-    "birthArrondissementCode": "mosipid:birthArrondissementCode",
-    "birthVillageCode": "mosipid:birthVillageCode",
-    "birthCountryCode": "mosipid:birthCountryCode"
+    }
   }
 }
